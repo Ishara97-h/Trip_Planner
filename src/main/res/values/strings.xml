@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">TripPlanner</string>
+    <string name="details">Details</string>
+    <string name="hey">AIzaSyBNZ9VYGOv6_dFQdn-dOY4XFKErRYOoTFk</string>
+    <string name="gw">Great Western Hike With Yaman
+\n• Date- 20th of October 2018
+\n• Location - Great Western Mountain Range
+\n• Duration- 01 days
+\n• Type of Activities-Jungle Trekking, Mountaineering
+
+\n\nExpedition Goal :
+\n* Great Western Hike
+
+\n\n- Activities-
+\n* Mountaineering
+\n* Trekking
+
+\n\nChallengers:
+\n* Hard Jungle Trekking
+\n* Wet Forest
+\n* Team Work
+
+\n\nTotal Payment: 2800 LKR for per person
+
+\n\nCost includes:
+\n* Adventure Program with YAMAN Adventure Team
+\n* Safety Introduction and Method
+\n* Up and down Transportation to Location (A/C )
+\n* 01 Main Meals (Lunch)
+\n* Refreshments
+\n* Full event photography (soft copy)
+
+\n\nResponsibility and Yaman
+
+\n\nWe are the leading tour management team of Extremely Adventure Sporting and Adventure Travelling in Sri Lanka, as our 03 years Wild and Adventure experience with the Professional knowledge we have Succeed many Different Kind of Adventure And Traveling Events,
+
+\n\nSpecial Remarks:
+\n*This Event Offer from Yaman for Adventure Lovers
+\n*Hurry up only for Limited Participation Only 18 Members can be join
+\n*Read Event Description carefully and Contact us for more info;
+\n* Please note that a Non-Refundable full of payment of 2800 LKR should be made on or before 10th of October to confirm your participation.
+\n*Please inbox us your contact details in order to receive Bank details and event procedure.
+\n*Participants will have to be present at 20th of October in Colombo at 02.00 am (in-front of Fort Railway Station)
+
+\n\nFor more info call us:
+\n✆Mayura - +94771193610
+\n✆Shani - +94719508969
+\nOr Leave Us Message To Yaman Official Facebook Page</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string-array name="preferenceItems">
+        <item>Test 1</item>
+        <item>Test 2</item>
+        <item>Test 3</item>
+        <item>Test 4</item>
+        <item>Test 5</item>
+        <item>Test 6</item>
+        <item>Test 7</item>
+    </string-array>
+
+    <string-array name="numbers">
+        <item>Select Room</item>
+        <item>Superior Room</item>
+        <item>A/C Room</item>
+        <item>Non A/C Room</item>
+    </string-array>
+
+    <string name="title_activity_maps2">Map</string>
+    <string name="adults">Adults:-</string>
+    <string name="children">Children:-</string>
+    <string name="departureDate">Departure Date</string>
+    <string name="arrivalDate">Arrival Date</string>
+    <string name="please_select_first_arrivalDate">Please select first arrival date</string>
+</resources>

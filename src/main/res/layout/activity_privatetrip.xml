@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D2CE"
+    tools:context=".privatetrip">
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/newbutt"
+        android:backgroundTint="#2196F3"
+        android:elevation="5dp"
+        android:text="@android:string/search_go" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/newbutt"
+        android:backgroundTint="#2196F3"
+        android:elevation="5dp"
+        android:text="Back" />
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="297dp"
+        android:textAlignment="center"
+        android:hint="Area"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="503dp"
+        android:background="@drawable/edittext" />
+
+    <EditText
+        android:id="@+id/datepicker2"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="238dp"
+        android:background="@drawable/edittext"
+        android:elevation="5dp"
+        android:hint="End Date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/budget"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="142dp"
+        android:background="@drawable/edittext"
+        android:elevation="5dp"
+        android:hint="Budget"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/visitors"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="421dp"
+        android:background="@drawable/edittext"
+        android:elevation="5dp"
+        android:hint="Number of visitors"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/datepicker"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="322dp"
+        android:background="@drawable/edittext"
+        android:elevation="5dp"
+        android:hint="Start Date"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

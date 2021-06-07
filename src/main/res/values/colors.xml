@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1550A8</color>
+    <color name="colorPrimaryDark">#3C70BE</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="app_background">#F2F2F2</color>
+    <color name="toolbar">#0A3761</color>
+    <color name="view_other_line">#AEBCC4</color>
+    <color name="enterText_contactUs_fragment">#78909c</color>
+</resources>

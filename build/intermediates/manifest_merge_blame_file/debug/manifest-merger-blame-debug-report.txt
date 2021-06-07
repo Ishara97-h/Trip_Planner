@@ -1,0 +1,409 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.e.tripplanner"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:10:5-81
+16-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:11:5-67
+17-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:12:5-81
+18-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.SEND_SMS" />
+19-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:13:5-67
+19-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:13:22-64
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+27
+28    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+28-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\42bdd8b5284c4c862429b47b64dff00a\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:5-68
+28-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\42bdd8b5284c4c862429b47b64dff00a\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:22-65
+29    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+29-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+29-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+30    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+30-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+30-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+31
+32    <application
+32-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:15:5-109:19
+33        android:allowBackup="true"
+33-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:16:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\e91594602c73eba9f0c6fb1745d43dba\core-1.1.0\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:17:9-43
+37        android:label="@string/app_name"
+37-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:18:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:19:9-54
+39        android:supportsRtl="true"
+39-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:20:9-35
+40        android:theme="@style/AppTheme" >
+40-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:21:9-40
+41        <activity android:name="com.e.tripplanner.Booking" />
+41-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:22:9-54
+41-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:22:19-42
+42        <activity
+42-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:23:9-25:72
+43            android:name="com.e.tripplanner.AttractionMap"
+43-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:24:13-42
+44            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+44-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:25:13-69
+45        <activity android:name="com.e.tripplanner.ViewPlace" />
+45-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:26:9-47
+45-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:26:19-44
+46        <activity android:name="com.e.tripplanner.sms" />
+46-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:27:9-41
+46-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:27:19-38
+47        <activity android:name="com.e.tripplanner.pdf" />
+47-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:28:9-41
+47-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:28:19-38
+48        <activity android:name="com.e.tripplanner.pdfgene" />
+48-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:29:9-45
+48-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:29:19-42
+49        <activity android:name="com.e.tripplanner.GroupApplication" />
+49-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:30:9-54
+49-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:30:19-51
+50        <activity
+50-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:31:9-39:20
+51            android:name="com.e.tripplanner.SplashScreen"
+51-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:32:13-41
+52            android:theme="@style/SplashTheme" >
+52-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:33:13-47
+53            <intent-filter>
+53-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:34:13-38:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:35:17-69
+54-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:35:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:37:17-77
+56-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:37:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             The API key for Google Maps-based APIs is defined as a string resource.
+61             (See the file "res/values/google_maps_api.xml").
+62             Note that the API key is linked to the encryption key used to sign the APK.
+63             You need a different API key for each encryption key, including the release key that is used to
+64             sign the APK for publishing.
+65             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+66        -->
+67        <meta-data
+67-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:48:9-50:55
+68            android:name="com.google.android.geo.API_KEY"
+68-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:49:13-58
+69            android:value="@string/google_maps_key" />
+69-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:50:13-52
+70
+71        <activity
+71-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:52:9-54:59
+72            android:name="com.e.tripplanner.MapsActivity"
+72-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:53:13-41
+73            android:label="@string/title_activity_maps" />
+73-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:54:13-56
+74        <activity android:name="com.e.tripplanner.CustomerMapActivity" />
+74-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:55:9-57
+74-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:55:19-54
+75        <activity android:name="com.e.tripplanner.NewMapsActivity" />
+75-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:56:9-53
+75-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:56:19-50
+76        <activity android:name="com.e.tripplanner.NewViewPlaceActivity" />
+76-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:57:9-58
+76-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:57:19-55
+77        <!--
+78             The API key for Google Maps-based APIs is defined as a string resource.
+79             (See the file "res/values/google_maps_api.xml").
+80             Note that the API key is linked to the encryption key used to sign the APK.
+81             You need a different API key for each encryption key, including the release key that is used to
+82             sign the APK for publishing.
+83             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+84        -->
+85        <activity android:name="com.e.tripplanner.PostDetailActivity" />
+85-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:66:9-56
+85-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:66:19-53
+86        <activity android:name="com.e.tripplanner.PostListActivity" />
+86-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:67:9-54
+86-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:67:19-51
+87        <activity android:name="com.e.tripplanner.DetailActivity" />
+87-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:68:9-52
+87-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:68:19-49
+88        <activity android:name="com.e.tripplanner.newhotels" />
+88-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:69:9-47
+88-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:69:19-44
+89        <activity android:name="com.e.tripplanner.hotels" />
+89-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:70:9-44
+89-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:70:19-41
+90        <activity
+90-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:71:9-73:45
+91            android:name="com.e.tripplanner.privatetrip"
+91-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:72:13-40
+92            android:label="Private Trips" />
+92-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:73:13-42
+93        <activity
+93-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:74:9-76:72
+94            android:name="com.e.tripplanner.HotelMap"
+94-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:75:13-37
+95            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+95-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:76:13-69
+96        <activity android:name="com.e.tripplanner.suggestion" />
+96-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:77:9-48
+96-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:77:19-45
+97        <activity android:name="com.e.tripplanner.gt1details" />
+97-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:78:9-48
+97-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:78:19-45
+98        <activity android:name="com.e.tripplanner.gt3" />
+98-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:79:9-41
+98-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:79:19-38
+99        <activity android:name="com.e.tripplanner.gt2" />
+99-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:80:9-41
+99-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:80:19-38
+100        <activity android:name="com.e.tripplanner.gt1" />
+100-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:81:9-41
+100-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:81:19-38
+101        <activity android:name="com.e.tripplanner.DriverMapActivity" />
+101-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:82:9-55
+101-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:82:19-52
+102        <activity
+102-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:83:9-85:43
+103            android:name="com.e.tripplanner.grouptrip"
+103-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:84:13-38
+104            android:label="Group Trips" />
+104-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:85:13-40
+105        <activity android:name="com.e.tripplanner.map" />
+105-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:86:9-41
+105-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:86:19-38
+106        <activity android:name="com.e.tripplanner.DriverLoginActivity" />
+106-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:87:9-57
+106-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:87:19-54
+107        <activity android:name="com.e.tripplanner.CustomerLoginActivity" />
+107-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:88:9-59
+107-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:88:19-56
+108        <activity android:name="com.e.tripplanner.home" />
+108-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:89:9-42
+108-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:89:19-39
+109        <activity
+109-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:90:9-92:72
+110            android:name="com.e.tripplanner.signup"
+110-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:91:13-35
+111            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+111-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:92:13-69
+112        <activity
+112-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:93:9-95:72
+113            android:name="com.e.tripplanner.login"
+113-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:94:13-34
+114            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+114-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:95:13-69
+115        <activity
+115-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:96:9-98:72
+116            android:name="com.e.tripplanner.MainActivity"
+116-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:97:13-41
+117            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+117-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:98:13-69
+118
+119        <provider
+119-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:100:9-108:20
+120            android:name="androidx.core.content.FileProvider"
+120-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:101:13-62
+121            android:authorities="com.e.tripplanner.fileprovider"
+121-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:102:13-65
+122            android:exported="false"
+122-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:103:13-37
+123            android:grantUriPermissions="true" >
+123-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:104:13-47
+124            <meta-data
+124-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:105:13-107:58
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:106:17-67
+126                android:resource="@xml/provider_paths" />
+126-->D:\KDU\Semester 3\GPSD\TripPlanner\app\src\main\AndroidManifest.xml:107:17-55
+127        </provider>
+128        <provider
+128-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\d9f7e469aee3a8aa08a0c90907c0d426\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+129            android:name="com.squareup.picasso.PicassoProvider"
+129-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\d9f7e469aee3a8aa08a0c90907c0d426\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+130            android:authorities="com.e.tripplanner.com.squareup.picasso"
+130-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\d9f7e469aee3a8aa08a0c90907c0d426\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+131            android:exported="false" />
+131-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\d9f7e469aee3a8aa08a0c90907c0d426\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+132
+133        <activity
+133-->[com.karumi:dexter:5.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\dd3f5458884b41cbc8ab56b22021ff29\jetified-dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+134            android:name="com.karumi.dexter.DexterActivity"
+134-->[com.karumi:dexter:5.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\dd3f5458884b41cbc8ab56b22021ff29\jetified-dexter-5.0.0\AndroidManifest.xml:28:13-60
+135            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+135-->[com.karumi:dexter:5.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\dd3f5458884b41cbc8ab56b22021ff29\jetified-dexter-5.0.0\AndroidManifest.xml:29:13-69
+136
+137        <meta-data
+137-->[com.firebaseui:firebase-ui-database:1.2.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c8dda73838d115270b2458eccf86f44b\jetified-firebase-ui-database-1.2.0\AndroidManifest.xml:14:9-16:69
+138            android:name="com.google.android.gms.version"
+138-->[com.firebaseui:firebase-ui-database:1.2.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c8dda73838d115270b2458eccf86f44b\jetified-firebase-ui-database-1.2.0\AndroidManifest.xml:15:13-58
+139            android:value="@integer/google_play_services_version" /> <!-- Needs to be explicitly declared on P+ -->
+139-->[com.firebaseui:firebase-ui-database:1.2.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c8dda73838d115270b2458eccf86f44b\jetified-firebase-ui-database-1.2.0\AndroidManifest.xml:16:13-66
+140        <uses-library
+140-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+141            android:name="org.apache.http.legacy"
+141-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+142            android:required="false" />
+142-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\782ac9e8c2d2502341598bbdb19278cf\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+143
+144        <activity
+144-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:24:9-31:50
+145            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+145-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:25:13-85
+146            android:excludeFromRecents="true"
+146-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:26:13-46
+147            android:exported="true"
+147-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:27:13-36
+148            android:launchMode="singleTask"
+148-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:28:13-44
+149            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+149-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:29:13-102
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:30:13-72
+151
+152        <service
+152-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:33:9-39:19
+153            android:name="com.google.firebase.components.ComponentDiscoveryService"
+153-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:34:13-84
+154            android:exported="false" >
+154-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:35:13-37
+155            <meta-data
+155-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:36:13-38:85
+156                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+156-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:37:17-109
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\ea8f0166be42f78cd9b67ff0be5a7590\firebase-auth-18.0.0\AndroidManifest.xml:38:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-database:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd940c05a6d4c77886ad0ce4ba440bbc\firebase-database-18.0.0\AndroidManifest.xml:30:13-32:85
+159                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+159-->[com.google.firebase:firebase-database:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd940c05a6d4c77886ad0ce4ba440bbc\firebase-database-18.0.0\AndroidManifest.xml:31:17-109
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-database:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd940c05a6d4c77886ad0ce4ba440bbc\firebase-database-18.0.0\AndroidManifest.xml:32:17-82
+161            <meta-data
+161-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\42bdd8b5284c4c862429b47b64dff00a\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+162                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+162-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\42bdd8b5284c4c862429b47b64dff00a\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\42bdd8b5284c4c862429b47b64dff00a\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+165                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+165-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+167        </service>
+168
+169        <receiver
+169-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+170            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+170-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+171            android:exported="true"
+171-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+172            android:permission="com.google.android.c2dm.permission.SEND" >
+172-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+173            <intent-filter>
+173-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+174                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+174-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+174-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\fd228627fa77d4cb352832a5de460b1f\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+175            </intent-filter>
+176        </receiver>
+177
+178        <activity
+178-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+179            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+179-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+180            android:exported="false"
+180-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+182
+183        <provider
+183-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\f63423fc02ba40059063890c63177263\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+184            android:name="com.google.firebase.provider.FirebaseInitProvider"
+184-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\f63423fc02ba40059063890c63177263\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+185            android:authorities="com.e.tripplanner.firebaseinitprovider"
+185-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\f63423fc02ba40059063890c63177263\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+186            android:exported="false"
+186-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\f63423fc02ba40059063890c63177263\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+187            android:initOrder="100" />
+187-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\f63423fc02ba40059063890c63177263\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+188
+189        <receiver
+189-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+193        </receiver>
+194        <receiver
+194-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+195            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+195-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+196            android:enabled="true"
+196-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+197            android:exported="true"
+197-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+198            android:permission="android.permission.INSTALL_PACKAGES" >
+198-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+199            <intent-filter>
+199-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+200                <action android:name="com.android.vending.INSTALL_REFERRER" />
+200-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+200-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+201            </intent-filter>
+202        </receiver>
+203
+204        <service
+204-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+205            android:name="com.google.android.gms.measurement.AppMeasurementService"
+205-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+206            android:enabled="true"
+206-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+207            android:exported="false" />
+207-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+208        <service
+208-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+209            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+209-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+210            android:enabled="true"
+210-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+212            android:permission="android.permission.BIND_JOB_SERVICE" />
+212-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\Thineth\.gradle\caches\transforms-2\files-2.1\c3707d162ba64e12dc220ac494666eab\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+213    </application>
+214
+215</manifest>
